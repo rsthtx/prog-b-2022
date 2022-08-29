@@ -11,7 +11,5 @@
 - [Max - Maxi0272](https://Maxi0272.github.io/) ([source](https://github.com/Maxi0272/Maxi0272.github.io))
 - [Noah - thelocalmilk](https://thelocalmilk.github.io/) ([source](https://github.com/thelocalmilk/thelocalmilk.github.io))
 - [Shokree - shokreehtx](https://shokreehtx.github.io/) ([source](https://github.com/shokreehtx/shokreehtx.github.io))
+- [Simon - mickilynge](https://mickilynge.github.io/) ([source](https://github.com/mickilynge/mickilynge.github.io))
 - [Tobias - blacklotus414](https://blacklotus414.github.io/) ([source](https://github.com/blacklotus414/blacklotus414.github.io))
-
-### TODO
-- Simon
