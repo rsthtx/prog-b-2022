@@ -3,6 +3,9 @@
 ## HTML basics
 - [HTML intro Demo](html-demo/)
 
+## Julekalender
+- [Advent of Code 2022](aoc-2022/)
+
 ## Deltagere
 
 - [Henrik - h3nse](https://h3nse.github.io/) ([source](https://github.com/h3nse/h3nse.github.io))
