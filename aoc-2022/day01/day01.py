@@ -1,37 +1,45 @@
+# def solutionA(lines):
+  
+#   max_calories = 0
+#   calories = 0
+#   for line in lines:
+#     if line == "":
+#       max_calories = max(calories, max_calories) 
+#       calories = 0
+#     else:
+#       calories += int(line)
+  
+#   max_calories = max(calories, max_calories)
+#   return max_calories
+
+
 def solutionA(lines):
-  max_calories = 0
-  
-  calories = 0
-  for line in lines:
-    if not line:
-      calories = 0
-    else:
-      calories += int(line)
-      
-      if calories > max_calories:
-        max_calories = calories
-  
-  return max_calories
+  return solve(lines)
+
 
 def solutionB(lines):
-  top_list = [0,0,0]
+  max_list = [0,0,0]
+  return solve(lines, max_list)
+  
+  
+def solve(lines, max_list = [0]):
   calories = 0
   for line in lines:
     if line == "":
-      update_top_list(calories, top_list)
+      update_max_list(calories, max_list)
       calories = 0
     else:
       calories += int(line)
   
   # make sure the last elf is included
-  update_top_list(calories, top_list)
+  update_max_list(calories, max_list)
     
-  return sum(top_list)
+  return sum(max_list)
 
-def update_top_list(calories, top_list):
-  for i, cal in enumerate(top_list):
-    if calories > cal:
-      top_list.insert(i, calories)
+def update_max_list(calories, top_list):
+  for idx, value in enumerate(top_list):
+    if calories > value:
+      top_list.insert(idx, calories)
       top_list.pop()
       break
 
