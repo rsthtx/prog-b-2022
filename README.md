@@ -6,6 +6,9 @@
 ## Julekalender
 - [Advent of Code 2022](aoc-2022/)
 
+## Godot
+- [Spil projekt](../prog-b-2022-spil-projekt/)
+
 ## Deltagere
 
 - [Henrik - h3nse](https://h3nse.github.io/) ([source](https://github.com/h3nse/h3nse.github.io))
