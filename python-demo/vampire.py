@@ -1,5 +1,5 @@
-name = 'Carol'
-age = 30
+name = input("What is your name?")
+age = int(input("What is your age?"))
 if name == 'Alice':
     print('Hi, Alice.')
 elif age < 12:
