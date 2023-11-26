@@ -4,7 +4,7 @@
 - [HTML intro Demo](html-demo/)
 
 ## Julekalender
-- [Advent of Code 2022](aoc-2022/)
+- [Advent of Code](aoc/)
 
 ## Godot
 - [Spil projekt](../prog-b-2022-spil-projekt/)
