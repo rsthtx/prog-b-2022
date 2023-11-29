@@ -5,7 +5,7 @@ def v3_solutions():
     X_char_value = ord("X")
 
     def compute(line):
-      p1, p2 = line.split(" ")
+      p1, _, p2 = line
       i = ord(p1) - A_char_value
       j = ord(p2) - X_char_value
       score = strategy(i,j)
@@ -29,6 +29,7 @@ def v3_solutions():
   solutionB = create_solver(score_strategy_B)
   return (solutionA, solutionB)
 
+
 def v2_solutions():
 
   # Values of selection
@@ -46,6 +47,17 @@ def v2_solutions():
 
   solutionA = create_solver(score_lookup_A)
   solutionB = create_solver(score_lookup_B)
+  return (solutionA, solutionB)
+
+
+def v2a_solutions():
+
+  def solutionA(lines):
+    return sum({f"{p1} {p2}" : [3, 6, 0][j-i] + [1, 2, 3][j] for i, p1 in enumerate("ABC") for j, p2 in enumerate("XYZ")}[l] for l in lines)
+  
+  def solutionB(lines):
+    return sum({f"{p1} {p2}" : [3, 1, 2][(j+i)%3] + [0, 3, 6][j] for i, p1 in enumerate("ABC") for j, p2 in enumerate("XYZ")}[l] for l in lines)
+
   return (solutionA, solutionB)
 
 
@@ -110,7 +122,7 @@ solutionA, solutionB = v3_solutions()
 if __name__ == "__main__":
   input_file_name = "dummy-input.txt"
   # TODO: Uncomment line below to use real input
-  input_file_name = "input.txt"
+  # input_file_name = "input.txt"
   
   print("Loading data")
   lines = load_data(input_file_name)
